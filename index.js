@@ -163,7 +163,8 @@ for (let i = 0; i < 32 * 32; i++) {
         tile.dataset.visited = "true";
         count++;
         percentage = ((count / 130) * 100).toFixed(2);
-        counter.textContent = "Highlighted: " + percentage + "%";
+        document.getElementById("counter-text").textContent =
+          "Highlighted: " + percentage + "%";
         tile.style.backgroundColor = "#bc0000";
       }
       if (count == 13) {

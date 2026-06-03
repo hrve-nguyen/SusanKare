@@ -80,10 +80,18 @@ p {
 
 #counter {
   color: gray;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-left: 70px;
   letter-spacing: 2px;
   text-transform: lowercase;
+  position: relative;
+}
+
+#animatedbunnies {
+  height: 50px;
+  position: absolute;
+  top: -250%;
+  left: 20%;
 }
 
 #kare-caption {
@@ -183,8 +191,8 @@ p {
 
 #rabbit {
   height: 350px;
-  top: 55vh;
-  left: 18vw;
+  top: -900%;
+  right: -30%;
   position: absolute;
 }
 
@@ -193,11 +201,4 @@ p {
   padding: 10px;
   box-shadow: var(--box-shadow);
   background-color: var(--primary);
-}
-
-#animatedbunnies {
-  height: 50px;
-  top: 70vh;
-  left: 10vw;
-  position: absolute;
 }

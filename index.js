@@ -2,7 +2,14 @@ const allTiles = document.getElementById("tiles");
 let count = 0;
 let percentage = count / 130;
 const counter = document.getElementById("counter");
-
+const bunnies = [
+  "images/bunny1.png",
+  "images/bunny2.png",
+  "images/bunny3.png",
+  "images/bunny4.png",
+  "images/bunny5.png",
+  "images/bunny6.png",
+];
 function tileIndex(row, col) {
   return row * 32 + col;
 }
@@ -151,6 +158,7 @@ for (let i = 0; i < 32 * 32; i++) {
 
   tile.addEventListener("mouseenter", () => {
     if (!tile.dataset.visited) {
+      animatedbunnies.src = bunnies[count % 6];
       if (bunnyTiles.includes(i)) {
         tile.dataset.visited = "true";
         count++;

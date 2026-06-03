@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SusanKare</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/bunny1.png" />
   </head>
   <body>
+    <div class="outer">
+      <img id="animatedbunnies" src="images/bunny1.png" />
+    </div>
     <div class="outer"><a class="inner" href="source.html">See Sources</a></div>
     <div class="outer">
       <pre id="innercred">
@@ -49,15 +53,15 @@
             in online software, art pieces in the vaults of MoMA, and sources of
             inspiration for new generations of graphic designers.
           </p>
-          <div class="textandimage">
-            <img id="kare" src="images/susankare-dithered.jpg" />
+          <div style="display: flex; gap: 8px">
+            <img style="height: 300px" src="images/susankare-dithered.jpg" />
             <p id="kare-caption">Susan Kare at desk, 1984, Norman Seef</p>
           </div>
         </div>
         <div id="content2">
           <h2>Background</h2>
-          <div id="float-container">
-            <img id="alto" src="images/xerox-alto.jpg" />
+          <div style="float: left">
+            <img id="alto" src="images/xerox-ascii.png" />
             <p id="alto-caption">Xerox Alto</p>
           </div>
           <p>
@@ -130,7 +134,7 @@
             <img id="jump" style="height: 350px" src="images/CommandIcon.jpg" />
             <p id="command-caption">Command Key</p>
           </div>
-          <p id="command-text">
+          <p style="margin-top: 50px">
             Another example of the metaphoric nature of her design process, the
             Command Key has its origins in a symbol utilized in Swedish
             campgrounds to signify an interesting sightseeing feature. On
@@ -164,7 +168,9 @@
             AGAIN!
           </p>
           <div class="flex-container">
-            <p id="vid-caption">Timelapse of 2.5 Hours of Stitching</p>
+            <p id="vid-caption">
+              Timelapse of 2.5 Hours of Stitching and Photographing
+            </p>
             <div style="text-align: right">
               <video autoplay muted playsinline loop width="550">
                 <source src="videos/bunny_low.mp4" type="video/mp4" />

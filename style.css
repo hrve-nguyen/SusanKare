@@ -43,6 +43,7 @@ p {
   width: 15px;
   height: 15px;
   transition: background-color 0.1s ease;
+  z-index: 100;
 }
 
 .tile:hover {
@@ -194,6 +195,7 @@ p {
   top: -900%;
   right: -30%;
   position: absolute;
+  z-index: 5;
 }
 
 .standard-dialog {
